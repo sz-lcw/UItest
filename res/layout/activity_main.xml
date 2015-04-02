@@ -27,19 +27,19 @@
         android:text="Menu" />
 
     <Button
-        android:id="@+id/Button02"
+        android:id="@+id/bnIntent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/bnMenu"
         android:layout_below="@+id/bnMenu"
-        android:text="Layout" />
+        android:text="Intent" />
 
     <Button
         android:id="@+id/Button03"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button02"
-        android:layout_below="@+id/Button02"
+        android:layout_alignLeft="@+id/bnIntent"
+        android:layout_below="@+id/bnIntent"
         android:text="Layout" />
 
 </RelativeLayout>

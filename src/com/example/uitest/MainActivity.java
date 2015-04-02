@@ -59,6 +59,15 @@ public class MainActivity extends ActionBarActivity {
 				startActivity(intent);
 			}
 		});
+		Button btnSumbmit3 = (Button)findViewById(R.id.bnIntent);
+		btnSumbmit3.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v){
+				Intent intent = new Intent("com.example.uitest.ACTION_START");
+				intent.addCategory("android.intent.category.MY_CATEGORY");
+				startActivity(intent);
+			}
+		});		
 	}
 	
 }

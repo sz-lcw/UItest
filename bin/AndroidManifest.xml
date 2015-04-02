@@ -27,7 +27,16 @@
        	/>
          <activity
             android:name=".MenuActivity"
-       	/>       
+       	/>
+          <activity
+            android:name=".IntentActivity">
+          	<intent-filter>
+          	    <action android:name="com.example.uitest.ACTION_START"	/>
+          	    <category android:name="android.intent.category.DEFAULT"/>
+          	    <category android:name="android.intent.category.MY_CATEGORY"/>
+          	</intent-filter> 
+          </activity>
+          	                     
     </application>
 
 </manifest>

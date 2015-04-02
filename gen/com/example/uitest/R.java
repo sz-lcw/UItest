@@ -1635,7 +1635,6 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020033;
     }
     public static final class id {
-        public static final int Button02=0x7f090041;
         public static final int Button03=0x7f090042;
         public static final int action_bar=0x7f090031;
         public static final int action_bar_activity_content=0x7f090003;
@@ -1650,12 +1649,14 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090043;
+        public static final int action_settings=0x7f090044;
         public static final int activity_chooser_view_content=0x7f090021;
-        public static final int add_item=0x7f090044;
+        public static final int add_item=0x7f090045;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
         public static final int bnFrameLayout=0x7f09003f;
+        public static final int bnIntent=0x7f090041;
+        public static final int bnIntent1=0x7f090043;
         public static final int bnMenu=0x7f090040;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
@@ -1682,7 +1683,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
-        public static final int remove_item=0x7f090045;
+        public static final int remove_item=0x7f090046;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;
@@ -1757,8 +1758,9 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
         public static final int framelayout_main=0x7f030018;
-        public static final int menu_main=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int intent_main=0x7f030019;
+        public static final int menu_main=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
