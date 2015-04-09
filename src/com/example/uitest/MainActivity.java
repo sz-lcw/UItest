@@ -11,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements OnClickListener {
 
 	//Button btnSubmit;
 	@Override
@@ -42,23 +42,40 @@ public class MainActivity extends ActionBarActivity {
 	
 	private void findViews(){
 		Button btnSubmit1 = (Button)findViewById(R.id.bnFrameLayout);
-		btnSubmit1.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v){
-				Toast.makeText(MainActivity.this,"click into FrameLayoutActivity", Toast.LENGTH_SHORT).show();
-				//into FrameLayoutActivity
-				Intent intent = new Intent(MainActivity.this,FrameLayoutActivity.class);
-				startActivity(intent);
-			}
-		});
-		Button btnSumbmit2 = (Button)findViewById(R.id.bnMenu);
-		btnSumbmit2.setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v){
-				Intent intent = new Intent(MainActivity.this,MenuActivity.class);
-				startActivity(intent);
-			}
-		});
+		btnSubmit1.setOnClickListener(this);
+		Button btnSubmit2 = (Button)findViewById(R.id.bnMenu);
+		btnSubmit2.setOnClickListener(this);
+		Button btnSubmit3 = (Button)findViewById(R.id.bnIntent);
+		btnSubmit3.setOnClickListener(this);
+		Button btnSubmit4 = (Button)findViewById(R.id.bnListView);
+		btnSubmit4.setOnClickListener(this);
+	}
+	
+	@Override
+	public void onClick(View v){
+		Intent intent;
+		switch(v.getId()){
+		case R.id.bnFrameLayout:
+			Toast.makeText(MainActivity.this,"click into FrameLayoutActivity", Toast.LENGTH_SHORT).show();
+			//into FrameLayoutActivity
+			intent = new Intent(MainActivity.this,FrameLayoutActivity.class);
+			startActivity(intent);
+			break;
+		case R.id.bnMenu:
+			intent = new Intent(MainActivity.this,MenuActivity.class);
+			startActivity(intent);			
+			break;
+		case R.id.bnIntent:
+			intent = new Intent("com.example.uitest.ACTION_START");
+			intent.addCategory("android.intent.category.MY_CATEGORY");
+			startActivity(intent);			
+			break;
+		case R.id.bnListView:
+			intent = new Intent(MainActivity.this,ListViewActivity.class);
+			startActivity(intent);					
+		default:
+			break;
+		}
 	}
 	
 }

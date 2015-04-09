@@ -8,38 +8,38 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.uitest.MainActivity" >
-     
-    <Button
-        android:id="@+id/bnFrameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" 
-        android:layout_alignParentTop="true"
-        android:text="FrameLayout" />
+ 
+        <Button
+            android:id="@+id/bnFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="FrameLayout" />
 
-    <Button
-        android:id="@+id/bnMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bnFrameLayout"
-        android:layout_below="@+id/bnFrameLayout"
-        android:text="Menu" />
+        <Button
+            android:id="@+id/bnMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bnFrameLayout"
+            android:layout_below="@+id/bnFrameLayout"
+            android:text="Menu" />
 
-    <Button
-        android:id="@+id/Button02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bnMenu"
-        android:layout_below="@+id/bnMenu"
-        android:text="Layout" />
+        <Button
+            android:id="@+id/bnIntent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bnMenu"
+            android:layout_below="@+id/bnMenu"
+            android:text="Intent" />
 
-    <Button
-        android:id="@+id/Button03"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Button02"
-        android:layout_below="@+id/Button02"
-        android:text="Layout" />
-
+        <Button
+            android:id="@+id/bnListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bnIntent"
+            android:layout_below="@+id/bnIntent"
+            android:text="ListView" />    
+    
 </RelativeLayout>
