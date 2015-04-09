@@ -36,6 +36,9 @@
           	    <category android:name="android.intent.category.MY_CATEGORY"/>
           	</intent-filter> 
           </activity>
+          <activity
+              android:name=".ListViewActivity">
+          </activity>
           	                     
     </application>
 

@@ -9,6 +9,7 @@ import android.view.View;
 //import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class IntentActivity extends Activity{
 	@Override
@@ -23,6 +24,7 @@ public class IntentActivity extends Activity{
 			public void onClick(View v){
 				Intent intent = new Intent(Intent.ACTION_VIEW);
 				intent.setData(Uri.parse("http://www.baidu.com"));
+				Toast.makeText(IntentActivity.this, "´ò¿ªBaiDu", Toast.LENGTH_SHORT).show();
 				startActivity(intent);
 			}
 		});
